@@ -1,0 +1,67 @@
+
+.head-section{
+    text-align: left;
+    padding: 10px;
+}
+
+.head-section-logo{
+    width: 10%;
+    height: 30px;
+    min-width: 130px;
+}
+
+
+.sidebar-btn{
+    font-size: 30px;
+    display: none;
+    color: black;
+    border: none;
+    background: none;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 1500px) {
+    .sidebar-btn {
+        display: inline-block; /* Show the button when screen width is less than 700px */
+    }
+}
+
+.search-btn{
+    margin-left:50%;
+}
+
+@media screen and (max-width: 800px) {
+    .search-btn {
+        display: none; 
+    }
+}
+
+.carousel-section{
+    width: 100%;
+    
+}
+
+.w-100{
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.mid-section{
+    min-width: 450px;
+    background-color: white;
+    position: absolute;
+    padding: 15px;
+    margin-top: 400px;
+    margin-left: 250px;
+    
+}
+
+.mid-section-mid{
+    margin: 20px;
+}
+
+.mid-section-end{
+    padding: 10px
+}
