@@ -1,4 +1,13 @@
 
+// LOAD TODAY'S DATE INTO MID-SECTION DATEPICKER
+window.onload = function() {
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+    var yyyy = today.getFullYear();
+    var formattedDate = yyyy + '-' + mm + '-' + dd;
+    document.getElementById('datepicker').value = formattedDate;
+};
 
 
 function sidebar_open(){
@@ -19,3 +28,4 @@ document.onclick = function(e){
         sideBar.style.display = "none";
     }
 }
+
