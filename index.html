@@ -15,12 +15,6 @@
     />
   </head>
   <body>
-    <div
-      id="sidebar"
-      class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left"
-      style="width: 400px; display: none"
-    ></div>
-
     <div class="mainframe">
       <div class="head-section">
         <button id="sidebar-btn" class="sidebar-btn" onclick="sidebar_open()">
@@ -147,7 +141,7 @@
             <p>Accomodation/Car Rental</p>
           </button>
         </div>
-        <div class="mid-section-mid">
+        <div id="mid-section-mid" class="mid-section-mid">
           <label class="toggleSwitch nolabel">
             <input type="checkbox" checked />
             <a></a>
@@ -178,6 +172,21 @@
             id="datepicker"
             placeholder="Select a date"
           />
+          <input
+            type="date"
+            class="datepicker"
+            id="datepicker"
+            placeholder="One way"
+          />
+          <input
+            type="text"
+            class="input-field"
+            id="datepicker"
+            placeholder="1 Adult"
+          />
+          <button class="mid-section-search-button">
+            SEARCH CHEAP FLIGHTS
+          </button>
         </div>
       </div>
       <img class="end-img" src="Assets/imag1.png" alt="" />

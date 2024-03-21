@@ -10,22 +10,25 @@ window.onload = function() {
 };
 
 
-function sidebar_open(){
-    document.getElementById("sidebar").style.display = "block";
-    document.getElementById("sidebar-btn").style.font = "dsad";
 
-}
+var sidebarButton = document.getElementById("sidebar-btn");
+var pageClick = document.getElementById('mainframe');
+var isOpened = false;
 
+document.addEventListener('click', function(event) {
+    var target = event.target;
+    if (!sidebarButton.contains(target) && !pageClick.contains(target) && isOpened) {
+        sidebarButton.innerText = "Open";
+        isOpened = false;
+    }
+});
 
-function sidebar_close(){
-    document.getElementById("sidebar").style.display = "none";
-}
-let sidebarButton = document.getElementById("sidebar-btn");
-let sideBar = document.getElementById("sidebar");
-
-document.onclick = function(e){
-    if (!sidebarButton.contains(e.target) && !sideBar.contains(e.target) ) {
-        sideBar.style.display = "none";
+function sidebar_open() {
+    if (!isOpened) {
+        sidebarButton.innerHTML = "&#10005";
+        isOpened = true;
+    } else {
+        sidebarButton.innerHTML = "&#8801";
+        isOpened = false;
     }
 }
-

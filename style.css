@@ -37,12 +37,20 @@
 }
 
 .sidebar-btn{
+    transition: all 0.25s;
     font-size: 30px;
     display: none;
     color: black;
     border: none;
+    border-color: white;
     background: none;
     font-weight: 800;
+}
+
+.sidebar-btn:hover{
+    opacity: 70%;
+    color: rgb(184, 5, 5);
+    margin: 6px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -54,15 +62,20 @@
 .search-button-icon{
     width: 35px; 
 }
+
+.search-button-icon:hover{
+    width: 37px;
+}
+
 .search-button{
     transition: 0.15s;
-    border-color: rgb(203, 203, 203);
-    border-width: 0.5px;
+    border: none;
     background-color: white;
-    margin-left: 450px;
-  
-    
-    
+    margin-left: 450px;  
+}
+
+.search-button:hover{
+    opacity: 70%;
 }
 
 .bolbol-div{
@@ -225,11 +238,21 @@ p{
 }
 
 .mid-section-search-button{
+    margin-left: 10px;
+    transition: all 0.25s;
     background-color: orange;
     color: white;
     border: none;
     border-radius: 7px;
     padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Open Sans",sans-serif;
+}
+
+.mid-section-search-button:hover{
+    opacity: 80%;
+    font-size: 15.5px;
 }
 
 .input-field{
@@ -238,6 +261,7 @@ p{
     border-bottom: 2px solid #333; 
     outline: none; 
     padding: 5px; 
+    margin: 15px;
     font-size: 16px; 
 }
 
@@ -247,6 +271,7 @@ p{
     outline: none; /* Remove default outline */
     padding: 5px; /* Optional: Add padding */
     font-size: 16px; /* Optional: Set font size */
+    margin: 15px;
 }
 
 .datepicker::placeholder {
