@@ -44,6 +44,10 @@
     }
 }
 
+@media screen and (max-width: 500px){
+    
+
+}
 
 .head-button:hover{
     cursor: pointer;
@@ -159,13 +163,23 @@ p{
     margin-top: 320px;
     margin-left: 220px;
     border-radius: 17.5px;
-     
+}
+
+.decision-div{
+    display: grid; grid-template-columns: auto auto
 }
 
 @media screen and (max-width: 1300px) {
     .mid-section{
-        margin-top: 250px;
-        margin-left: 100px;
+        margin-top: 200px;
+        margin-left: 250px;
+        width: 850px;
+    }
+    .end-img-div{
+        margin: 0px;
+    }
+    .end-img{
+        margin: 0px;
     }
 }
 
@@ -175,40 +189,58 @@ p{
         height: 25px;
     }
     .mid-section{
-        width: 800px;
-        margin-top: 200px;
-        margin-left: 90px;
+        padding: 10px;
+        width: 550px;
+        margin-top: 250px;
+        margin-left: 275px;
     }
     .mid-section-mid{
-        display: none;
+        
     }
     .mid-section-end{
-        display: none;
+        
+    }
+    .decision-div{
+       display: none;
+    }
+    .end-img-div{
+        margin: 0px;
     }
    
 }
 
-
-@media screen and (max-width: 700px){
+@media screen and (max-width: 925px){
     .mid-section{
-        padding: 1px;
-        width: 150px;
-        
+        margin-left: 200px;
     }
-    .mid-section-head{
-        padding: 10px;
-        margin: 0px;
-        padding: 0px;
-        
-    }
-    .mid-section-mid{
-        padding: 0px;
-        margin: 0px;
+    
+
+
+}
+
+@media screen and (max-width: 600px){
+    .carousel-img{
         display: none;
     }
-    .mid-section-end{
+    
+    .end-img-div{
         display: none;
     }
+
+    .best-fares-div{
+        display: none;
+    }
+    .head-section{
+        width: 100%;
+    }
+    .mid-section{   
+        width: 100px;
+        margin: 0px;
+        margin-top: 125px;
+        text-align: center;
+    }
+
+    
     
     .search-button{
         display: none;
@@ -216,10 +248,11 @@ p{
 
     .bolbol-button{
         border: none;
-        margin-left: 100px;
+        margin-left: 1%;
     }
-
 }
+
+
 
 
 .mid-section-mid{
@@ -257,8 +290,8 @@ em{
 }
 
 .end-img{
-    width: 75%;
-    margin-top: 130px;
+    width: 1250px;
+    margin-top: 140px;
     margin-left: 90px;
 }
 
