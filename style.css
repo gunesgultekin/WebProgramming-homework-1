@@ -1,5 +1,5 @@
 .mainframe{
-    display: grid; grid-template-rows: auto auto auto;
+    display: grid; grid-template-rows: auto auto auto auto;
     padding: 0px;
     background-color: rgb(234, 234, 234);
 }
@@ -19,10 +19,23 @@
 }
 
 .head-button{
+    transition: 0.10s;
     border: none;
+    border-color: white;
     background-color: white;
     font-size: 13px;
     font-weight: bold;
+}
+
+.head-button:hover{
+    opacity: 70%;
+    font-size: 15px;
+}
+.head-button:active{
+    border: none;
+    opacity: 65%;
+    background-color: #e1e1e1;
+
 }
 
 @media screen and (max-width: 1000px){
@@ -71,7 +84,7 @@
     transition: 0.15s;
     border: none;
     background-color: white;
-    margin-left: 450px;  
+    margin-left: 20%;
 }
 
 .search-button:hover{
@@ -139,12 +152,12 @@ p{
 
 
 .mid-section{
-    transition: 0.4s;
+    transition: 0.45s;
     background-color: white;
     position: absolute;
     padding: 15px;
-    margin-top: 400px;
-    margin-left: 250px;
+    margin-top: 320px;
+    margin-left: 220px;
     border-radius: 17.5px;
      
 }
@@ -215,12 +228,38 @@ p{
 }
 
 .mid-section-end{
-    transition: 0.5s;
+    transition: 0.25s;
     padding: 10px
 }
 
+em{
+    font-family:  "Open Sans",sans-serif;
+    color: #515050;
+    font-style: normal;
+    font-weight: 700
+}
+
+.mid-end-text{
+    color: #7a7878;
+    font-size: 14px
+
+}
+
+.mid-section-search-button-red{
+    transition: all 0.1s;
+    border: none;
+    border-color: white;
+    background-color: #f0efefce ;
+    margin: 0px;
+}
+.mid-section-search-button-red:hover{
+    opacity: 80%;
+}
+
 .end-img{
-    margin-top: 20px;
+    width: 75%;
+    margin-top: 130px;
+    margin-left: 90px;
 }
 
 .mid-section-main-button{
@@ -240,11 +279,11 @@ p{
 .mid-section-search-button{
     margin-left: 10px;
     transition: all 0.25s;
-    background-color: orange;
+    background :linear-gradient(to right, rgb(250, 106, 36) 0px, rgb(242, 172, 20) 100%);
     color: white;
     border: none;
     border-radius: 7px;
-    padding: 15px;
+    padding: 20px;
     font-size: 15px;
     font-weight: 600;
     font-family: "Open Sans",sans-serif;
@@ -289,8 +328,26 @@ p{
 
 }
 
+.best-fares-div{
+    margin-top: 15px;
+    margin-left: 235px;
+}
 
+.best-fares-span{
+    font-family: "Open Sans bold",sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    background: linear-gradient(to right, rgb(250, 106, 36) 0px, rgb(242, 172, 20) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
 
+.end-span{
+    font-family: "Open Sans bold",sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+
+}
 
 
 
