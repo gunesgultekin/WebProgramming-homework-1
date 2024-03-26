@@ -235,13 +235,11 @@ p{
     }
     .mid-section{   
         width: 100px;
-        margin: 0px;
+        margin: 25%;
         margin-top: 125px;
         text-align: center;
     }
 
-    
-    
     .search-button{
         display: none;
     }
