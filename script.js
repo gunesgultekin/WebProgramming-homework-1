@@ -1,12 +1,21 @@
 
-// LOAD TODAY'S DATE INTO MID-SECTION DATEPICKER
 window.onload = function() {
     var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+    var dd = String(today.getDate());
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); 
     var yyyy = today.getFullYear();
+
+    var dayLater = new Date();
+    dayLater.setDate(dayLater.getDate() + 1);
+    var dd_second = String(dayLater.getDate());
+    var mm_second = String(dayLater.getMonth() + 1).padStart(2, '0'); 
+    var yyyy_second = dayLater.getFullYear();
+
     var formattedDate = yyyy + '-' + mm + '-' + dd;
-    document.getElementById('datepicker').value = formattedDate;
+    var formattedDate_second = yyyy_second + '-' + mm_second + '-' + dd_second;
+
+    document.getElementById('datepicker-1').value = formattedDate;
+    document.getElementById('datepicker-2').value = formattedDate_second;
 };
 
 
