@@ -261,8 +261,7 @@ p{
 @media screen and (max-width: 600px){
 
     .sidebar-btn{
-        font-weight: 10px;
-        font-weight: 400;
+        display: none;
     }
 
     .search-button{
@@ -274,6 +273,7 @@ p{
     }
 
     .bolbol-logo{
+        margin: 0px;
         width: 20px;
     }
 
@@ -298,6 +298,7 @@ p{
         margin-bottom: 15px;
         margin-right: 0px;
         margin-left: 0px;
+        margin-bottom: 0px;
 
     }
 
