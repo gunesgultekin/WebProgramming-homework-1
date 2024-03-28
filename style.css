@@ -381,8 +381,12 @@ p{
         
     }
 
-    .mid-section-main-button{
-        
+    .input-field{
+        width: 65%
+    }
+
+    .datepicker{
+        width: 65%;
     }
 
     .end-img-div{
@@ -467,7 +471,7 @@ em{
 }
 
 .input-field{
-    width: 150px;
+    
     border: none;
     border-bottom: 2px solid #333; 
     outline: none; 
