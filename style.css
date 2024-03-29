@@ -291,11 +291,11 @@ p{
     }
 
     .search-button{
-        width: 10px;
+        display: none;
     }
     
     .head-button{
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .bolbol-logo{
@@ -317,6 +317,12 @@ p{
     .bolbol-button{
         display: inline-block;
     }
+
+    .head-section{
+        align-items: center;
+        display: inline-block;
+        padding: 12.5px;
+    }
     
     .head-section-logo{
         width: 80px;
@@ -325,7 +331,6 @@ p{
         margin-left: 6px;
         margin-top: 2px;
         margin-bottom: 0px;
-
     }
 
     .bolbol-button{
@@ -342,10 +347,6 @@ p{
 
     .language-icon{
         width: 20px;
-    }
-
-    .head-section{
-        width: 100%;
     }
     .search-button{
         margin: 0px;
